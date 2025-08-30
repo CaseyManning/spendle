@@ -29,7 +29,7 @@ export function findCategories() {
 
   while (categories.length < 3) {
     const randomBucket = Math.floor(Math.random() * bucketsArray.length);
-    if (bucketIndices.some((index) => Math.abs(index - randomBucket) <= 1)) {
+    if (bucketIndices.some((index) => Math.abs(index - randomBucket) <= 2)) {
       continue;
     }
     categories.push(bucketsArray[randomBucket]);

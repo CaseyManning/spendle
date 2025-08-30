@@ -63,11 +63,13 @@ const Game = ({ categories }: GameProps) => {
       setFound([...found, ...selected]);
       setSelected([]);
     } else {
-      setWrong(selected);
-      setTimeout(() => {
-        setWrong([]);
-      }, 500);
       setSelected([]);
+      if (lives !== 1) {
+        setWrong(selected);
+        setTimeout(() => {
+          setWrong([]);
+        }, 500);
+      }
       setLives(lives - 1);
     }
   }
