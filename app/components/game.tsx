@@ -111,7 +111,7 @@ const Game = ({ categories }: GameProps) => {
             You win!
           </div>
         )}
-        <div className="flex flex-row gap-2 items-center justify-center pt-4">
+        <div className="flex flex-row gap-2 items-center justify-center pt-4 h-4">
           {Array.from({ length: lives }).map((_, i) => (
             <div
               key={i}
