@@ -22,11 +22,10 @@ const Tile = ({
     currency: "USD",
     maximumFractionDigits: 0,
   }).format(value);
-  console.log(foundColor);
   return (
     <div
       className={`bg-stone-200/60 flex flex-col gap-y-2 items-center justify-center border-zinc-200 font-semibold text-black p-4 text-center
-         text-sm rounded-sm w-50 h-30 ${isSelected ? "!bg-blue-200" : ""} !${foundColor} ${isWrong ? "!bg-red-200 wiggle" : ""} `}
+         text-sm rounded-sm w-50 h-30 ${isSelected ? "!bg-blue-200" : ""} ${isWrong ? "!bg-red-200 wiggle" : ""} ${!isFound ? "cursor-pointer" : ""}`}
       onClick={onClick}
       style={{
         userSelect: "none",

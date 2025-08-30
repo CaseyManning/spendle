@@ -45,6 +45,9 @@ const Game = ({ categories }: GameProps) => {
   }, [categories]);
 
   const handleClick = (item: string) => {
+    if (lives === 0) {
+      return;
+    }
     if (selected.includes(item)) {
       setSelected(selected.filter((i) => i !== item));
     } else {
