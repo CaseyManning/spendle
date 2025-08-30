@@ -81,7 +81,7 @@ const Game = ({ categories }: GameProps) => {
     <div className="flex w-full h-full bg-white items-center justify-center">
       <div className="flex flex-col gap-2 relative">
         <p className="text-center text-sm font-semibold pb-4">
-          Select the three categories of equivalent consumer spending
+          Select the three categories of equivalent U.S. consumer spending
         </p>
 
         {shuffledCategories.map((row) => (

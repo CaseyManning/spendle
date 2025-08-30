@@ -34,7 +34,7 @@ const Tile = ({
     >
       {text}
       {isFound === true && (
-        <div className="text-xs font-bold ">{usdFormatted}</div>
+        <div className="text-xs font-bold ">{usdFormatted}M</div>
       )}
     </div>
   );
