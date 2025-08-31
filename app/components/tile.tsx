@@ -25,7 +25,7 @@ const Tile = ({
   return (
     <div
       className={`bg-stone-200/60 flex flex-col gap-y-2 items-center justify-center border-zinc-200 font-semibold text-black p-4 text-center
-         text-sm rounded-sm w-50 h-30 ${isSelected ? "!bg-blue-200" : ""} ${isWrong ? "!bg-red-200 animate-tile-wiggle" : ""} ${!isFound ? "cursor-pointer" : ""}`}
+         text-sm rounded-sm w-25 h-40 md:w-50 md:h-30 ${isSelected ? "!bg-blue-200" : ""} ${isWrong ? "!bg-red-200 animate-tile-wiggle" : ""} ${!isFound ? "cursor-pointer" : ""}`}
       onClick={onClick}
       style={{
         userSelect: "none",

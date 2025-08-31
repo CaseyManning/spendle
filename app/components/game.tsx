@@ -85,7 +85,7 @@ const Game = ({ categories }: GameProps) => {
         </p>
 
         {shuffledCategories.map((row) => (
-          <div key={row[0]} className="flex flex-row gap-2">
+          <div key={row[0]} className="flex flex-row gap-2 justify-center">
             {row.map((item) => (
               <Tile
                 key={item}
